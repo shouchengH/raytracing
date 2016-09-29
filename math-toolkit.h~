@@ -98,11 +98,11 @@ static inline
 double scalar_triple(const double *u, const double *v, const double *w)
 {
     double tmp[3];
-    cross_product(w, u, tmp);
+    //cross_product(w, u, tmp);
 
-    /*tmp[0] = w[1] * u[2] - w[2] * u[1];
+    tmp[0] = w[1] * u[2] - w[2] * u[1];
     tmp[1] = w[2] * u[0] - w[0] * u[2];
-    tmp[2] = w[0] * u[1] - w[1] * u[0];*/
+    tmp[2] = w[0] * u[1] - w[1] * u[0];
 
     return dot_product(v, tmp);
 }
